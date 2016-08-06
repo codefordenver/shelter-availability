@@ -1,0 +1,67 @@
+﻿@model ShelterAvailability.Models.ShelterModels.Shelter
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Shelter</h4>
+    <hr />
+    <dl class="dl-horizontal">
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CurrentTotalSpaces)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CurrentTotalSpaces)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SingleSpacesAvailable)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SingleSpacesAvailable)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FamilySpacesAvailable)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FamilySpacesAvailable)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CurrentPopulation)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CurrentPopulation)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PhoneNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PhoneNumber)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ShelterID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
