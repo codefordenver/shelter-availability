@@ -8,7 +8,9 @@ This repo was created from https://cfd-new.herokuapp.com. Use [the Waffle board]
 
 ### Dependencies
 You will need:
-- [Visual Studio 2015](https://www.visualstudio.com/en-us/downloads/download-visual-studio-vs.aspx)
+- [Visual Studio 2015 Update 3](http://www.asp.net/)
+- [.NET Core](http://www.asp.net/)
+- [Github Desktop](https://desktop.github.com/)
 
 ### Running
 To start the local app server for development open Web\ShelterAvailability.sln in Visual Studio 2015 and press [F5].
