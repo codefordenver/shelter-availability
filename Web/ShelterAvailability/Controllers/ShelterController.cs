@@ -162,6 +162,7 @@ namespace ShelterAvailability.Controllers
                 }
 
                 _dbContext.Shelters.RemoveRange(_dbContext.Shelters);
+                _dbContext.SaveChanges();
                 _dbContext.Shelters.AddRange(shelters);
 
                 _dbContext.SaveChanges();
