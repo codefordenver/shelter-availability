@@ -55,8 +55,10 @@ namespace ShelterAvailability
             services.AddMvc();
 
             // Add application services.
+            services.Configure<SmsSettings>(Configuration.GetSection("SmsSettings"));
+
             services.AddTransient<IEmailSender, AuthMessageSender>();
-            services.AddTransient<ISmsSender, AuthMessageSender>();
+            services.AddTransient<ISmsSender, TwilioSMSService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

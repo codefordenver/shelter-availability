@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
+//using System.Data.Spatial;
 
 namespace ShelterAvailability.Models.ShelterModels
 {
@@ -21,6 +22,7 @@ namespace ShelterAvailability.Models.ShelterModels
         public DateTime AvailabilityLastUpdated { get; set; }
 
         //Location
+          
 
         //Shelter Status
         public ShelterStatus status { get; set; }
